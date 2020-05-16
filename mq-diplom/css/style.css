@@ -1,0 +1,81 @@
+body{
+    margin:0px;
+    font-family: "Open Sans";
+}
+.welcome{
+    position:relative;
+    background-image:url(../images/football_1920.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.welcome::after{
+    content:'';
+    background-color:#0a0e34;
+
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0.9;
+}
+}
+.welcome__head{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
+    background-image:url(../svg/surface_logo_text.svg);
+    background-repeat:no-repeat;
+    background-size:191px;
+    background-color:#ffffff;
+    background-position:center;
+}
+.surface{
+    display: none;
+}
+.container{
+    color: #ffffff;
+    text-transform:uppercase;
+    font-weight: bold;
+    margin-left: 190px;
+    margin-right: 140px;
+    position: relative;
+    z-index:2;
+}
+.welcome__main{
+
+    font-size: 90px;
+    padding-top: 295px;
+}
+.slogan__part{
+    display: flex;
+    flex-flow: wrap;
+    justify-content:flex-end;
+    margin-bottom: 220px;
+}
+.welcome__footer{
+    color: #ffffff;
+    text-decoration: none;
+}
+.app_link{
+    border-radius: 38px;
+    background-color: rgb(94, 66, 176);
+    width: 311px;
+    height: 77px;
+}
+.google_link{
+    border-radius: 38px;
+    background-color: rgb(94, 66, 176);
+    width: 311px;
+    height: 77px;
+}
+
+.app__link{
+    background-image:url(../svg/apple_logo_black.svg);
+    background-repeat:no-repeat;
+    background-size:42px;
+    background-color:#ffffff;
+    background-position:center;
+}
+
+
