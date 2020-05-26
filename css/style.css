@@ -1,4 +1,174 @@
-h1{
-    color:red;
-    border: 1px solid red;
+body{
+    margin:0px;
+    font-family: "Open Sans";
+    max-width: 1920px;
 }
+.welcome{
+    position:relative;
+    background-image:url(../images/football_1920.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.welcome::after{
+    content:'';
+    background-color:#0a0e34;
+
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0.9;
+}
+.surface{
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+.surface__link{
+    display: none;
+}
+.surface__icon{
+    width: 191px;
+    height: 51px;
+}
+.container{
+    color: #ffffff;
+    text-transform:uppercase;
+    font-weight: bold;
+    margin-left: 185px;
+    margin-right: 190px;
+    position: relative;
+    z-index:2;
+}
+.slogan{
+    padding-top: 210px;
+}
+h1{
+    display: flex;
+    flex-direction:column ;
+    font-size: 90px;
+    line-height:80px;
+}
+.slogan_ferst{
+    align-self: flex-start;
+}
+.slogan_two{
+    align-self: flex-end;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 14px;
+    padding-top: 115px;
+    padding-bottom: 110px;
+}
+.app__icon{
+    width: 42px;
+    height: 48px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-right: 28px;
+    float:left;
+}
+.google__icon{
+    width: 40px;
+    height: 50px;
+    margin-left: 58px;
+    margin-top: 13px;
+    float:left;
+    margin-right: 28px;
+}
+.app_link{
+    border-radius: 38px;
+    background-color: rgb(94, 66, 176);
+    width: 311px;
+    height: 77px;
+    margin-right: 51px;
+}
+.google_link{
+    border-radius: 38px;
+    background-color: rgb(94, 66, 176);
+    width: 311px;
+    height: 77px;
+}
+.app_linkfirst{
+    display: block;
+    font-weight: normal;
+    padding-top: 18px;
+}
+.app__link{
+    text-decoration: none;
+    color: #ffffff;
+}
+.google__link{
+    text-decoration: none;
+    color: #ffffff;
+}
+.down{
+    position:relative;
+    background-image:url(../images/game_1920.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    text-transform:uppercase;
+    margin: 0 auto;
+}
+.down::after{
+    content:'';
+    background-color:#0a0e34;
+
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0.9;
+}
+.down_content{
+    position: relative;
+    z-index:200;
+}
+.donloads_icon{
+    width: 105px;
+    height:85px;
+    float:left;
+    margin-right: 38px;
+    margin-left:15px;
+    margin-top: 26px;
+}
+.app_linkone{
+    display: block;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.app_linktwos{
+    font-size: 30px;
+    font-weight: normal;
+    color: #a496ca;
+}
+.donloads{
+    padding-top: 228px;
+    padding-bottom: 151px;
+    display: flex;
+    flex-direction: column;
+}
+.donloads_link{
+    text-decoration: none;
+    color: #ffffff;
+}
+.link__footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 262px;
+}
+.surfacedooble{
+    margin-bottom: 52px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
