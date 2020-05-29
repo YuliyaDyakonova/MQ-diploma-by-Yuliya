@@ -70,14 +70,12 @@ h1{
     margin-left: 40px;
     margin-top: 10px;
     margin-right: 28px;
-    float:left;
 }
 .google__icon{
     width: 40px;
     height: 50px;
     margin-left: 58px;
     margin-top: 13px;
-    float:left;
     margin-right: 28px;
 }
 .app_link{
@@ -101,10 +99,14 @@ h1{
 .app__link{
     text-decoration: none;
     color: #ffffff;
+    display: flex;
+    flex-direction: row;
 }
 .google__link{
     text-decoration: none;
     color: #ffffff;
+    display: flex;
+    flex-direction: row;
 }
 .down{
     position:relative;
@@ -113,6 +115,9 @@ h1{
     background-size:cover;
     text-transform:uppercase;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .down::after{
     content:'';
@@ -132,10 +137,9 @@ h1{
 .donloads_icon{
     width: 105px;
     height:85px;
-    float:left;
-    margin-right: 38px;
-    margin-left:15px;
-    margin-top: 26px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
 }
 .app_linkone{
     display: block;
@@ -151,12 +155,12 @@ h1{
 .donloads{
     padding-top: 228px;
     padding-bottom: 151px;
-    display: flex;
-    flex-direction: column;
 }
 .donloads_link{
     text-decoration: none;
     color: #ffffff;
+    display: flex;
+    flex-direction: row;
 }
 .link__footer{
     display: flex;
@@ -168,7 +172,107 @@ h1{
     display: flex;
     justify-content: center;
 }
+.donloads__iconbc{
+    width: 103px;
+    height: 86px;
+    background-color: #6b4fd3;
+    border-radius: 20px;
+    padding: 25px 13px 25px 13px;
+    margin-right: 36px;
+}
+.texts_link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.app_linktwo{
+    font-weight: bold;
+}
+.surfaces{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 52px;
+}
+h2{
+    font-weight: bold;
+    font-size: 80px;
+    color: #e7e7e7;
+    text-transform:uppercase;
+    padding-left: 50%;
+}
+sup {
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+}
+sup::after{
+    content:'';
+    position: absolute;
+    top: 100%;
+    margin-top: 7px;
+    left:50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color:#573fae;
+    border-radius: 2px;
+    width: 19px;
+    height: 5px;
+}
+h3{
+    font-weight: bold;
+    font-size: 36px;
+    color: #c0c0c0;
+    text-transform:uppercase;
+}
+p{
+    font-size: 20px;
+}
+.part_three{
+    background-color: #573fae;
+    padding-left: 50%;
+}
+.part_two{
+    background-color: #f5f4fa;
+    padding-left: 50%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.part_one{
+    padding-left: 50%;
+}
+.three::after{
+    content:'';
+    position: absolute;
+    top: 100%;
+    margin-top: 7px;
+    left:50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color:#eeeeee;
+    border-radius: 2px;
+    width: 19px;
+    height: 5px;
+}
+.atlets{
+    background-image: url(../images/footballer_566.png);
+    background-repeat: no-repeat;
+}
+.beactive{
+    display: flex;
+    flex-direction: row;
+}
+.beactive_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+.active{
+    padding-left: 0%;
+}
 
 
 
