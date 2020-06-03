@@ -30,7 +30,7 @@ body{
 }
 .surface__icon{
     width: 191px;
-    height: 51px;
+    height: 52px;
 }
 .container{
     color: #ffffff;
@@ -193,7 +193,7 @@ h1{
     justify-content: center;
     padding-bottom: 52px;
 }
-h2{
+.atlet{
     font-weight: bold;
     font-size: 80px;
     color: #e7e7e7;
@@ -225,7 +225,7 @@ h3{
     color: #c0c0c0;
     text-transform:uppercase;
 }
-p{
+.text_atlet{
     font-size: 20px;
 }
 .part_three{
@@ -236,9 +236,10 @@ p{
     background-color: #f5f4fa;
     padding-left: 50%;
 }
-.content{
+.content {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .part_one{
     padding-left: 50%;
@@ -256,23 +257,191 @@ p{
     width: 19px;
     height: 5px;
 }
-.atlets{
-    background-image: url(../images/footballer_566.png);
-    background-repeat: no-repeat;
+.atlets_preview{
+    position: absolute;
+    top:27px;
+    left:18%;
+    bottom:0;
+    content:'';
+    width: 31vw;
+}
+.atlet_preview{
+    width: 25vw;
+}
+.players_part_three{
+    background-color: #0a0e34;
+    padding-left: 10%;
+    color: #ffffff;
+}
+.players_part_two{
+    background-color: #f5f4fa;
+    padding-left: 10%;
+}
+.part_threes{
+    color: #9173e6;
+}
+.part_threes::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    margin-top: 7px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #eeeeee;
+    border-radius: 2px;
+    width: 19px;
+    height: 5px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.players_part_one{
+    padding-left: 10%;
+}
+.players_preview{
+    position: absolute;
+    top:23px;
+    left:42%;
+    content:'';
+}
+.player_preview{
+    width: 45vw;
+}
+.players{
+    font-weight: bold;
+    font-size: 80px;
+    color: #e7e7e7;
+    text-transform:uppercase;
+    padding-left: 10%;
+}
+.players_content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.text_player{
+    width: 40%;
+    font-size: 20px;
+}
+.number{
+    font-size: 24px;
+    color: #f5f6f7;
+    font-weight: bold;
+
+}
+.number::after{
+    content: " ";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #8f7bc8;
+    border-radius: 2px;
+    width: 24px;
+    height: 5px;
+
+}
+.box{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e42b0;
+  width: 9%;
+  height: 21%;
+  top: 213px;
+  left: 46%;
+}
+.preview{
+    display: flex;
+}
+.preview_active{
+    width: 50vw;
 }
 .beactive{
     display: flex;
     flex-direction: row;
+    position: relative;
+    margin: 0;
 }
 .beactive_text{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-top: 185px;
+    padding-left: 128px;
+    padding-right: 196px;
 
 }
 .active{
-    padding-left: 0%;
+    font-weight: bold;
+    font-size: 80px;
+    color: #e7e7e7;
+    text-transform:uppercase;
 }
+.beactive_texts{
+    font-size: 24px;
+}
+.work_it{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.find_contact{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.preview_find_contact{
+    width: 50vw;
+}
+.box_find_contact{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5e42b0;
+    width: 9%;
+    height: 21%;
+    top: 213px;
+    left: 46%;
+}
+.number_find_contact{
+    font-size: 24px;
+    color: #f5f6f7;
+    font-weight: bold;
+}
+.number_find_contact::after{
+    content: " ";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #8f7bc8;
+    border-radius: 2px;
+    width: 24px;
+    height: 5px;
+}
+.text_find_contact{
+    display: flex;
+    flex-direction: column;
+    padding-top: 185px;
+    padding-left: 193px;
+    padding-right: 116px;
+}
+.texts_find_contact{
+    font-size: 24px;
+}
+
+
 
 
 
