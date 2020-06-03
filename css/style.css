@@ -1,7 +1,7 @@
 body{
     margin:0px;
     font-family: "Open Sans";
-    max-width: 1920px;
+    width: 1920px;
 }
 .welcome{
     position:relative;
@@ -263,7 +263,6 @@ h3{
     left:18%;
     bottom:0;
     content:'';
-    width: 31vw;
 }
 .atlet_preview{
     width: 25vw;
@@ -304,11 +303,11 @@ h3{
 .players_preview{
     position: absolute;
     top:23px;
-    left:42%;
+    left:809px;
     content:'';
 }
 .player_preview{
-    width: 45vw;
+    width: 46vw;
 }
 .players{
     font-weight: bold;
@@ -346,30 +345,30 @@ h3{
 
 }
 .box{
-  position: absolute;
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
   background-color: #5e42b0;
-  width: 9%;
-  height: 21%;
+  width: 168px;
+  height: 155px;
   top: 213px;
-  left: 46%;
+  left:46%;
 }
 .preview{
     display: flex;
-}
-.preview_active{
-    width: 50vw;
+    width: 50%;
+    margin: 0;
 }
 .beactive{
     display: flex;
     flex-direction: row;
     position: relative;
-    margin: 0;
+    margin:0 auto;
 }
 .beactive_text{
     display: flex;
+    width: 50%;
     flex-direction: column;
     padding-top: 185px;
     padding-left: 128px;
@@ -393,14 +392,12 @@ h3{
 main{
     display: flex;
     flex-direction: column;
+    width: 1920px;
 }
 .find_contact{
     display: flex;
     flex-direction: row;
     position: relative;
-}
-.preview_find_contact{
-    width: 50vw;
 }
 .box_find_contact{
     position: absolute;
@@ -408,8 +405,8 @@ main{
     align-items: center;
     justify-content: center;
     background-color: #5e42b0;
-    width: 9%;
-    height: 21%;
+    width: 168px;
+    height: 155px;
     top: 213px;
     left: 46%;
 }
@@ -432,6 +429,7 @@ main{
 }
 .text_find_contact{
     display: flex;
+    width: 50%;
     flex-direction: column;
     padding-top: 185px;
     padding-left: 193px;
