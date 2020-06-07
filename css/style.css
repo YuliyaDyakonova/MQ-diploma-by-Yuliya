@@ -209,7 +209,6 @@ body {
     .texts_link {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         font-size: 14px;
     }
 
@@ -222,7 +221,6 @@ body {
         justify-content: center;
         padding-bottom: 52px;
     }
-
     .atlet {
         font-weight: bold;
         font-size: 80px;
@@ -237,7 +235,9 @@ body {
         font-size: 18px;
         color: #000000;
     }
-
+.part_one {
+    padding-left: 50%;
+}
     sup::after {
         content: '';
         position: absolute;
@@ -270,14 +270,9 @@ body {
     }
 
     .content {
-        display: flex;
-        flex-direction: column;
         position: relative;
-    }
+}
 
-    .part_one {
-        padding-left: 50%;
-    }
 
     .three::after {
         content: '';
@@ -304,7 +299,6 @@ body {
     .atlet_preview {
         width: 25vw;
     }
-
     .players_part_three {
         background-color: #0a0e34;
         padding-left: 10%;
@@ -333,7 +327,6 @@ body {
         width: 19px;
         height: 5px;
     }
-
     .content {
         display: flex;
         flex-direction: column;
@@ -367,6 +360,7 @@ body {
         display: flex;
         flex-direction: column;
         position: relative;
+        overflow: hidden;
     }
 
     .text_player {
@@ -415,8 +409,8 @@ body {
     .beactive {
         display: flex;
         flex-direction: row;
-        position: relative;
         margin: 0 auto;
+        position: relative;
     }
 
     .beactive_text {
@@ -503,24 +497,306 @@ body {
     }
 
 @media (min-width: 641px) and (max-width: 960px) {
+    body{
+        width: 100vw;
+    }
  h1{
      font-size: 64px;
  }
- h2{
+ h3{
      font-size: 32px;
  }
     p{
      font-size: 16px;
  }
     .welcome {
-    background-image: url(../images/football_767.jpg);
+    background-image: url(../images/football_1280.jpg);
 }
-    .slogan {
-        padding-left: 85px;
-        padding-right: 78px;
+ .container{
+       width: 703px;
+       max-width: 100%;
+       padding: 0 23px;
+ }
+ .slogan{
+     padding-left: 55px;
+ }
+ .slogan_two{
+     padding-left: 105px;
+ }
+ .surface{
+     margin-bottom: 175px;
+ }
+ .footer{
+       padding-bottom: 92px;
+   }
+    .part_one, .part_two, .part_three, .atlet {
+        padding-left: 38%;
+        padding-right: 33px;
     }
-
+    .atlets_preview{
+        top: 96px;
+        left: -15%;
+    }
+    .atlet_preview{
+        width: 49vw;
+    }
+    .players{
+        margin-bottom: 0;
+    }
+    .players_part_two, .players_part_one, .players_part_three, .players{
+        padding-left: 33px;
+    }
+    .players_preview{
+       top: 64px;
+       left: 44%;
+    }
+    .player_preview{
+        width: 80vw;
+    }
+    .text_player{
+        width: 50%;
+    }
+    .preview_active, .preview_find_contact{
+        width: 100vw;
+    }
+    .box, .box_find_contact{
+        width: 116px;
+        height: 116px;
+        top: 55%;
+        left: 33px;
+    }
+    .beactive, .preview, .work_it{
+        flex-direction: column;
+        margin: 0;
+    }
+    .beactive_text, .text_find_contact{
+        max-width: 960px;
+        width: 650px;
+        padding: 0 70px 0 32px ;
+        margin-bottom: 48px;
+    }
+    .active{
+        margin-bottom: 0;
+    }
+    .find_contact{
+        flex-direction: column-reverse;
+    }
+    .down {
+        background-image: url(../images/game_767.jpg);
+    }
+    .link__footer{
+        padding-bottom: 55px;
+    }
+    .surfaces{
+        padding-bottom: 24px;
+    }
+    .donloads_link{
+        flex-direction: column;
+        align-items: center;
+    }
+    .app_linktwos{
+        margin: 0 auto;
+    }
+    .donloads{
+        padding-bottom: 290px;
+        padding-top: 125px;
+    }
+    .donloads__iconbc{
+        margin-bottom: 44px;
+    }
 }
+@media (max-width: 640px){
+    body{
+        width: 100vw;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 23px;
+        padding-top: 55px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .welcome {
+        background-image: url(../images/football_767.jpg);
+    }
+    .container{
+        width: 280px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .slogan_two{
+        padding-left: 44px;
+    }
+    .surface{
+        padding-top: 33px;
+        margin-bottom: 130px;
+    }
+    .footer{
+        padding-top: 90px;
+        padding-bottom: 83px;
+        flex-direction: column;
+    }
+    .app_link, .google_link {
+        border-radius: 17px;
+        background-color: rgb(94, 66, 176);
+        width: 280px;
+        height: 35px;
+        margin-bottom: 14px;
+    }
+    .app__icon{
+        width: 20px;
+        height: 24px;
+        margin-left: 82px;
+        margin-top: 3px;
+        margin-right: 8px;
+    }
+    .google__icon {
+        width: 22px;
+        height: 24px;
+        margin-left: 82px;
+        margin-top: 6px;
+        margin-right: 5px;
+    }
+    .texts_link{
+        font-size: 8px;
+    }
+    .part_one, .part_two, .part_three, .atlet, .players_part_two, .players_part_one, .players_part_three, .players {
+        padding: 0 20px;
+    }
+    .atlet {
+        padding-top: 24px;
+        padding-bottom: 244px;
+        margin: 0;
+        font-size: 50px;
+    }
+    .atlets_preview{
+        top: 91px;
+        left: 70px;
+    }
+    .atlet_preview{
+        width: 60vw;
+    }
+    .content{
+        max-width: 100%;
+        width: 320px;
+    }
+    .players_preview{
+        top: 125px;
+        left: 10px;
+    }
+    .player_preview{
+        width: 302px;
+    }
+    .text_player, .text_atlet{
+        width: 100%;
+        padding-bottom: 55px;
+    }
+    .players{
+        padding-bottom: 245px;
+        margin: 0;
+        padding-top: 22px;
+        font-size: 50px;
+    }
+    .players_part_one, .part_one{
+        background-color: #fafafa;
+    }
+    .preview_active, .preview_find_contact{
+        width: 100vw;
+    }
+    .box, .box_find_contact{
+        width: 70px;
+        height: 70px;
+        top: 40%;
+        left: 20px;
+    }
+    .number, .number_find_contact{
+        font-size: 14px;
+    }
+    .number_find_contact::after, .number::after{
+        top: 65%;
+        border-radius: 1px;
+        width: 17px;
+        height: 4px;
+    }
+    .beactive, .preview, .work_it{
+        flex-direction: column;
+        margin: 0;
+    }
+    .beactive_text, .text_find_contact{
+        padding-left: 21px;
+        padding-right: 28px;
+        padding-bottom: 78px;
+        padding-top: 0;
+    }
+    .beactive_texts, .texts_find_contact{
+        max-width: 640px;
+        width: 250px;
+        font-size: 16px;
+    }
+    .active{
+        margin-bottom: 0;
+        font-size: 28px;
+        width: 220px;
+    }
+    .find_contact{
+        flex-direction: column-reverse;
+    }
+    .down {
+        background-image: url(../images/game_767.jpg);
+        position: center;
+    }
+    .link__footer{
+        padding-bottom: 55px;
+    }
+    .surfaces{
+        padding-bottom: 24px;
+    }
+    .donloads_link{
+        flex-direction: column;
+        align-items: center;
+    }
+    .app_linktwos{
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .donloads{
+        padding-bottom: 50px;
+        padding-top: 99px;
+    }
+    .donloads__iconbc{
+        width: 57px;
+        height: 47px;
+        margin-bottom: 44px;
+        border-radius: 20px;
+        padding: 13px 7px;
+        margin-right: 0;
+    }
+    .donloads_icon{
+        width: 57px;
+        height: 47px;
+    }
+    .link__footer{
+        padding-top: 26px;
+        padding-bottom: 83px;
+        flex-direction: column;
+    }
+    .app_linkone{
+        font-size: 32px;
+    }
+    .down_content{
+        max-width: 100%;
+        width: 280px;
+        padding: 0 20px;
+    }
+    .surface__icon{
+      width: 133px;
+      height: 36px;
+    }
+}
+
 
 
 
