@@ -10,6 +10,9 @@ main {
     flex-direction: column;
     max-width: 1920px;
 }
+img{
+    max-width: 100%;
+}
 .welcome {
     position: relative;
     background-image: url(../images/football_1920.jpg);
@@ -384,13 +387,26 @@ h3 {
     margin: 0 auto;
     max-width: 100%;
 }
-.beactive_text {
+.beactive_text, .text_find_contact {
+    width: 50%;
+
+}
+.text{
     display: flex;
-    width: 100%;
     flex-direction: column;
+    width: 100%;
     padding-top: 185px;
     padding-left: 128px;
-    padding-right: 196px;
+    padding-right: 85px;
+    box-sizing: border-box;
+}
+.text_find{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 187px;
+    padding-top: 185px;
+    padding-right: 50px;
     box-sizing: border-box;
 }
 .active {
@@ -398,9 +414,11 @@ h3 {
     font-size: 80px;
     color: #e7e7e7;
     text-transform: uppercase;
+    width: 600px;
 }
 .beactive_texts {
     font-size: 24px;
+
 }
 .work_it {
     display: flex;
@@ -441,17 +459,9 @@ h3 {
     width: 24px;
     height: 5px;
 }
-.text_find_contact {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding-top: 185px;
-    padding-left: 193px;
-    padding-right: 116px;
-    box-sizing: border-box;
-}
 .texts_find_contact {
     font-size: 24px;
+
 }
 @media (min-width: 641px) and (max-width: 960px) {
     body {
@@ -721,6 +731,7 @@ h3 {
         max-width: 640px;
         width: 250px;
         font-size: 16px;
+        box-sizing: border-box;
     }
     .active {
         margin-bottom: 0;
