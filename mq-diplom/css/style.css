@@ -377,6 +377,7 @@ h3 {
     display: flex;
     margin: 0;
     width: 50%;
+    min-width: 50%;
 }
 .preview_active, .preview_find_contact{
     width: 50vw;
@@ -398,7 +399,7 @@ h3 {
     padding-top: 185px;
     padding-left: 128px;
     padding-right: 85px;
-    box-sizing: border-box;
+
 }
 .text_find{
     display: flex;
@@ -407,7 +408,7 @@ h3 {
     padding-left: 187px;
     padding-top: 185px;
     padding-right: 50px;
-    box-sizing: border-box;
+
 }
 .active {
     font-weight: bold;
@@ -531,27 +532,34 @@ h3 {
     }
     .preview_active,
     .preview_find_contact {
-        width: 100vw;
+        width: 100%;
     }
     .box,
     .box_find_contact {
         width: 116px;
         height: 116px;
-        top: 55%;
+        top: -10%;
         left: 33px;
+    }
+    .number::after, .number_find_contact::after {
+        top: 65%;
     }
     .beactive,
     .preview,
     .work_it {
         flex-direction: column;
         margin: 0;
+        width: 100%;
+    }
+    .text_find, .text{
+        padding-left: 26px;
+        padding-top: 55px;
+        padding-bottom: 100px;
     }
     .beactive_text,
     .text_find_contact {
         max-width: 960px;
-        width: 650px;
-        padding: 0 70px 0 32px;
-        margin-bottom: 48px;
+        width: 960px;
     }
     .active {
         margin-bottom: 0;
@@ -584,8 +592,8 @@ h3 {
     }
 }
 @media (max-width: 640px) {
-    body {
-        width: 100vw;
+    main {
+        width: 320px;
     }
     h1 {
         font-size: 28px;
@@ -641,6 +649,7 @@ h3 {
     }
     .texts_link {
         font-size: 8px;
+        margin-top: 9px;
     }
     .part_one,
     .part_two,
@@ -695,11 +704,14 @@ h3 {
     .preview_find_contact {
         width: 100vw;
     }
+    .preview{
+        width: 100%;
+    }
     .box,
     .box_find_contact {
         width: 70px;
         height: 70px;
-        top: 40%;
+        top: -8%;
         left: 20px;
     }
     .number,
@@ -719,17 +731,17 @@ h3 {
         flex-direction: column;
         margin: 0;
     }
-    .beactive_text,
-    .text_find_contact {
-        padding-left: 21px;
-        padding-right: 28px;
-        padding-bottom: 78px;
-        padding-top: 0;
+    .text,
+    .text_find {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 75px;
+        padding-top: 35px;
     }
     .beactive_texts,
     .texts_find_contact {
         max-width: 640px;
-        width: 250px;
+        width: 280px;
         font-size: 16px;
         box-sizing: border-box;
     }
