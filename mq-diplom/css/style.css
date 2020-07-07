@@ -1,14 +1,25 @@
 body {
     margin: 0px;
     font-family: "Open Sans";
-    max-width: 1920px;
+
     font-size: 20px;
+}
+@font-face{
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
 }
 main {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    max-width: 1920px;
 }
 img{
     max-width: 100%;
@@ -76,6 +87,7 @@ h1 {
 }
 .app__icon {
     width: 42px;
+    min-width: 42px;
     height: 48px;
     margin-right: 28px;
     margin-left: 58px;
@@ -83,6 +95,7 @@ h1 {
 }
 .google__icon {
     width: 40px;
+    min-width: 40px;
     height: 50px;
     margin-left: 58px;
     margin-top: 13px;
@@ -201,6 +214,7 @@ h1 {
 }
 .texts_link {
     width: 700px;
+    max-width: 100%;
 }
 .surfaces {
     display: flex;
@@ -270,14 +284,15 @@ h3 {
     height: 5px;
 }
 .atlets_preview {
-    position: absolute;
-    top: 27px;
-    left: 18%;
-    bottom: 0;
-    content: "";
+    position: relative;
+    width: 50%;
 }
 .atlet_preview {
-    width: 25vw;
+    max-width: 556px;
+    position: absolute;
+    top: 27px;
+    right: 50px;
+    bottom: 0;
 }
 .players_part_three {
     background-color: #0a0e34;
@@ -313,13 +328,14 @@ h3 {
     padding-left: 10%;
 }
 .players_preview {
-    position: absolute;
-    top: 23px;
-    left: 809px;
-    content: "";
+    position: relative;
+    width: 50%;
 }
 .player_preview {
-    width: 46vw;
+    position: absolute;
+    max-width: 991px;
+    top: 23px;
+    left: 809px;
 }
 .players {
     font-weight: bold;
@@ -363,7 +379,8 @@ h3 {
     width: 168px;
     height: 155px;
     top: 213px;
-    left: -10%;
+    right: 100%;
+    margin-right: -84px;
 }
 .box_text,
 .box_texts {
@@ -371,6 +388,7 @@ h3 {
 }
 .box_text{
     width: 50%;
+    min-width: 50%;
     box-sizing: border-box;
 }
 .preview {
@@ -385,11 +403,11 @@ h3 {
 .beactive {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+
     max-width: 100%;
 }
 .beactive_text, .text_find_contact {
-    width: 50%;
+    /*width: 50%;*/
 
 }
 .text{
@@ -399,6 +417,7 @@ h3 {
     padding-top: 185px;
     padding-left: 128px;
     padding-right: 85px;
+    box-sizing: border-box;
 
 }
 .text_find{
@@ -408,14 +427,14 @@ h3 {
     padding-left: 187px;
     padding-top: 185px;
     padding-right: 50px;
-
+box-sizing: border-box;
 }
 .active {
     font-weight: bold;
     font-size: 80px;
     color: #e7e7e7;
     text-transform: uppercase;
-    width: 600px;
+    /*max-width: 600px;*/
 }
 .beactive_texts {
     font-size: 24px;
@@ -441,7 +460,8 @@ h3 {
     width: 168px;
     height: 155px;
     top: 213px;
-    right: -10%;
+    left: 100%;
+    margin-left: -84px;
 }
 .number_find_contact {
     font-size: 24px;
@@ -505,11 +525,13 @@ h3 {
         padding-right: 33px;
     }
     .atlets_preview {
-        top: 96px;
-        left: -15%;
+        width: 100%;
+    
     }
     .atlet_preview {
         width: 49vw;
+        top: 96px;
+        left: -15%;
     }
     .players {
         margin-bottom: 0;
@@ -521,11 +543,12 @@ h3 {
         padding-left: 33px;
     }
     .players_preview {
-        top: 64px;
-        left: 44%;
+        
     }
     .player_preview {
-        width: 80vw;
+        width: 690px;
+        top: 60px;
+        left: 80%;
     }
     .text_player {
         width: 50%;
@@ -540,6 +563,7 @@ h3 {
         height: 116px;
         top: -10%;
         left: 33px;
+        margin-left: 0;
     }
     .number::after, .number_find_contact::after {
         top: 65%;
@@ -593,7 +617,7 @@ h3 {
 }
 @media (max-width: 640px) {
     main {
-        width: 320px;
+       
     }
     h1 {
         font-size: 28px;
@@ -609,7 +633,6 @@ h3 {
         background-image: url(../images/football_767.jpg);
     }
     .container {
-        width: 280px;
         max-width: 100%;
         padding: 0 20px;
     }
@@ -631,7 +654,7 @@ h3 {
         background-color: rgb(94, 66, 176);
         width: 280px;
         height: 35px;
-        margin-bottom: 14px;
+        margin: 0 auto 14px;
     }
     .app__icon {
         width: 20px;
@@ -667,23 +690,19 @@ h3 {
         margin: 0;
         font-size: 50px;
     }
-    .atlets_preview {
+    .atlet_preview {
+        width: 192px;
         top: 91px;
         left: 70px;
     }
-    .atlet_preview {
-        width: 60vw;
-    }
     .content {
         max-width: 100%;
-        width: 320px;
-    }
-    .players_preview {
-        top: 125px;
-        left: 10px;
+        
     }
     .player_preview {
         width: 302px;
+        top: 125px;
+        left: 10px;
     }
     .text_player,
     .text_atlet {
@@ -713,6 +732,10 @@ h3 {
         height: 70px;
         top: -8%;
         left: 20px;
+        margin: 0;
+    }
+    .box_text{
+        width: 100%;
     }
     .number,
     .number_find_contact {
@@ -741,7 +764,6 @@ h3 {
     .beactive_texts,
     .texts_find_contact {
         max-width: 640px;
-        width: 280px;
         font-size: 16px;
         box-sizing: border-box;
     }
